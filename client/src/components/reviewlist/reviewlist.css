@@ -1,0 +1,54 @@
+.reviewList {
+    margin-top: 20px;
+    width: 90%;
+  }
+  
+  .reviewItem {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .reviewItem h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: maroon;
+  }
+
+  .reviewList h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: maroon;
+  }
+  
+  .reviewItem h3 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .reviewItem p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .reviewItem p.rating {
+    font-weight: bold;
+  }
+  
+
+  .starRating {
+    display: flex;
+  }
+  
+  .star {
+    color: darkgray; /* Default color for inactive stars */
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .star.active {
+    color:goldenrod; /* Color for active stars */
+  }

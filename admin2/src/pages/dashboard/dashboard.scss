@@ -1,0 +1,35 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #a2a2a2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info p {
+    margin: 0 0 10px;
+}
+
+.user-info p strong {
+    font-weight: bold;
+}
+
+.user-info img {
+    display: block;
+    margin: 0 auto 20px; // Center the image horizontally and add margin below it
+    max-width: 40%; // Ensure the image doesn't exceed its container width
+    border-radius: 50%; // Make the image round
+}
