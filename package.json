@@ -1,6 +1,27 @@
 {
   "dependencies": {
+    "express": "^5.1.0",
     "google-maps-react": "^2.0.6",
     "react-router-dom": "^6.22.1"
-  }
+  },
+  "name": "cse-408-final-travelbee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahfuzzamanSizan/CSE-408-Final-TravelBee.git"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahfuzzamanSizan/CSE-408-Final-TravelBee/issues"
+  },
+  "homepage": "https://github.com/MahfuzzamanSizan/CSE-408-Final-TravelBee#readme",
+  "description": ""
 }
