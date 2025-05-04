@@ -22,13 +22,13 @@ import {
 
 const Chart = ({ aspect, title }) => {
   const [hotelData, setHotelData] = useState([])
-  const {data} = useFetch("/hotels");
+  const {data} = useFetch("https://travelbeeserver-kgqu.onrender.com/hotels");
   const hotelNames = data.map(hotel => hotel.name);
 
   // console.log(hotelNames); 
 
   const handleHotelRevenue = async (hotel) => {
-    const res = await fetch(`/orders/get/revenueby/hotel/${hotel}`);
+    const res = await fetch(`https://travelbeeserver-kgqu.onrender.com/orders/get/revenueby/hotel/${hotel}`);
     const data = await res.json();
     // console.log(data);
     return data;
@@ -43,7 +43,7 @@ const Chart = ({ aspect, title }) => {
   useEffect(() => {
     const fetchHotelRevenue = async () => {
       try {
-        const hotelNames = (await fetch("/hotels")).map((hotel) => hotel.name);
+        const hotelNames = (await fetch("https://travelbeeserver-kgqu.onrender.com/hotels")).map((hotel) => hotel.name);
         const hotelRevenueData = await Promise.all(
           hotelNames.map(async (hotel) => ({
             name: hotel,

@@ -17,7 +17,7 @@ import { useContext } from "react";
 
 const handleLogout = () => {
   localStorage.clear();
-  window.location.href = "/login";
+  window.location.href = "https://travelbeeserver-kgqu.onrender.com/login";
 }
 
 

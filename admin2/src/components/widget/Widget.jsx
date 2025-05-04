@@ -18,9 +18,9 @@ const Widget = ({ type }) => {
 
   let amount = 100;
   //temporary
-  const { data: hotelCount} = useFetch("/hotels/get/hotelCount");
-  const { data: userCount} = useFetch("/users/get/userCount");
-  const { data: roomCount} = useFetch("/rooms/get/room/Count");
+  const { data: hotelCount} = useFetch("https://travelbeeserver-kgqu.onrender.com/hotels/get/hotelCount");
+  const { data: userCount} = useFetch("https://travelbeeserver-kgqu.onrender.com/users/get/userCount");
+  const { data: roomCount} = useFetch("https://travelbeeserver-kgqu.onrender.com/rooms/get/room/Count");
 
 
   switch (type) {

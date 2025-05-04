@@ -8,7 +8,7 @@ import useFetch from "../../hooks/useFetch";
 
 const Featured = () => {
   
-  const {data} = useFetch("/orders/get/total/revenue");
+  const {data} = useFetch("https://travelbeeserver-kgqu.onrender.com/orders/get/total/revenue");
 
 
   return (
