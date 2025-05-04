@@ -29,7 +29,7 @@ const SingleHotel = () => {
   const rooms = selectedData?.rooms || [];
   const tags = selectedData?.tags || [];
 
-  const { data: roomsData, loading: roomsLoading, error: roomsError } = useFetch(`http://localhost:8000/api/rooms`);
+  const { data: roomsData, loading: roomsLoading, error: roomsError } = useFetch(`https://travelbeeserver-kgqu.onrender.com/api/rooms`);
   console.log(roomsData);
 
 

@@ -17,7 +17,7 @@ const NewRoom = () => {
 
   const { data, loading, error } = useFetch(`/hotels`)
 
-  const { data: hotelData, loading: hotelLoading, error: hotelError } = useFetch(`http://localhost:8000/api/hotels/find/${hotelId}`)
+  const { data: hotelData, loading: hotelLoading, error: hotelError } = useFetch(`https://travelbeeserver-kgqu.onrender.com/api/hotels/find/${hotelId}`)
 
   console.log(hotelData)
 
@@ -35,7 +35,7 @@ const NewRoom = () => {
     console.log(hotel)
     console.log(roomNumbers)
     try {
-      await axios.post(`http://localhost:8000/api/rooms/${hotelId}`, { ...info, hotel, roomNumbers, createdAt });
+      await axios.post(`https://travelbeeserver-kgqu.onrender.com/api/rooms/${hotelId}`, { ...info, hotel, roomNumbers, createdAt });
     } catch (err) {
       console.log(err)
     }

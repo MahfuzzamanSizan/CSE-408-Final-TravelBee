@@ -44,8 +44,8 @@ const EditHotel = ({ inputs, title }) => {
       }
 
       console.log(newHotel)
-      console.log("http://localhost:8000/api/hotels/" + id)
-      await axios.put(`http://localhost:8000/api/hotels/${id}`, newHotel)
+      console.log("https://travelbeeserver-kgqu.onrender.com/api/hotels/" + id)
+      await axios.put(`https://travelbeeserver-kgqu.onrender.com/api/hotels/${id}`, newHotel)
 
     } catch (err) {
       console.log(err)

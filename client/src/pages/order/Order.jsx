@@ -17,8 +17,8 @@ const Order = () => {
     const location = useLocation();
     const [roomData, setRoomData] = useState([]);
     //const { data, loading, error } = useFetch(`http://localhost:8000/api/hotels/find/${hotelId}`)
-    const { data2 } = useFetch(`http://localhost:8000/api/rooms/${roomId}`)
-    const { data: hotelData, loading: hotelLoading, error: hotelError } = useFetch(`http://localhost:8000/api/hotels/find/${hotelId}`);
+    const { data2 } = useFetch(`https://travelbeeserver-kgqu.onrender.com/api/rooms/${roomId}`)
+    const { data: hotelData, loading: hotelLoading, error: hotelError } = useFetch(`https://travelbeeserver-kgqu.onrender.com/api/hotels/find/${hotelId}`);
     //const { data: getData, loading: getLoading, error: getError } = useFetch(`http://localhost:8000/api/rooms/${roomId}/`);
 
     const [error, setError] = useState("");
@@ -84,7 +84,7 @@ const Order = () => {
         console.log(username)
         // Implement your confirmation logic here
         try {
-            await axios.post(`http://localhost:8000/api/orders` , {userId, username, hotelName, address, city, cost, checkIn,checkOut});
+            await axios.post(`https://travelbeeserver-kgqu.onrender.com/api/orders` , {userId, username, hotelName, address, city, cost, checkIn,checkOut});
             // Handle successful registration, maybe redirect user to login page
             navigate("/order/transaction")
             
@@ -121,7 +121,7 @@ const Order = () => {
 
     const fetchRoomById = async (roomId) => {
         try {
-            const response = await fetch(`http://localhost:8000/api/rooms/availability/${roomId}`);
+            const response = await fetch(`https://travelbeeserver-kgqu.onrender.com/api/rooms/availability/${roomId}`);
             if (!response.ok) {
                 throw new Error(`Failed to fetch room data: ${response.statusText}`);
             }

@@ -44,8 +44,8 @@ const EditUser = ({ inputs, title }) => {
       }
 
       console.log(newUser)
-      console.log("http://localhost:8000/api/users/" + id)
-      await axios.put(`http://localhost:8000/api/users/${id}`, newUser)
+      console.log("https://travelbeeserver-kgqu.onrender.com/api/users/" + id)
+      await axios.put(`https://travelbeeserver-kgqu.onrender.com/api/users/${id}`, newUser)
 
     } catch (err) {
       console.log(err)

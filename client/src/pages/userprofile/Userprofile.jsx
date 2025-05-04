@@ -13,7 +13,7 @@ const Userprofile = () => {
         const fetchUserOrders = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`http://localhost:8000/api/orders/getUserOrder/${user._id}`);
+                const response = await fetch(`https://travelbeeserver-kgqu.onrender.com/api/orders/getUserOrder/${user._id}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch user orders');
                 }

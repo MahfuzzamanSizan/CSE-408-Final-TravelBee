@@ -13,7 +13,7 @@ const Logout = () => {
         localStorage.setItem("user", null);
         localStorage.setItem("token", null);
         localStorage.setItem("isAdmin", null);
-      await axios.post('http://localhost:8000/api/auth/logout'); 
+      await axios.post('https://travelbeeserver-kgqu.onrender.com/api/auth/logout'); 
       dispatch({ type: 'LOGOUT_SUCCESS' });
       navigate('/login'); 
 

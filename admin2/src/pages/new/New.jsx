@@ -34,7 +34,7 @@ const New = ({ inputs, title }) => {
       }
 
 
-      await axios.post(`http://localhost:8000/api/auth/register`, newUser)
+      await axios.post(`https://travelbeeserver-kgqu.onrender.com/api/auth/register`, newUser)
 
     }catch(err){
       console.log(err)
